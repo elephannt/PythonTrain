@@ -40,6 +40,8 @@ print (J)
 menu = '1'
 precio = 0
 
+##Iteraciones
+
 while menu == '1':
 
     print ("Quieres ingredientes extra?\nsi=1 + 10$ precio solo una ves.\nno=0 + 0$")
