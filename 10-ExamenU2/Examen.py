@@ -7,7 +7,7 @@ tarifa =30
 incremento = tarifa*1.0
 
 ##Validamos nuestro nombre.
-nombre = raw_input('Ingrese nombre de usuario: ')
+nombre = raw_input('Enter username: ')
 ##Nuestra funcion para hacer los calculos.
 def  validacion(nombre):
 
@@ -15,82 +15,82 @@ def  validacion(nombre):
 
 	if (nombre == "Marco" or nombre == "Antonio" or nombre == "Jose" or nombre == "David" or nombre == "Emilio"):
 		if nombre == 'Marco':
-			passwd = raw_input('\nIngrese contraseña: ')
+			passwd = raw_input('\nEnter password: ')
 			if passwd == '1':
-				print 'Bienvenido a la sesión'
-				horast = input("\nIngrese las horas trabajadas: ")
+				print 'Welcome back...',nombre
+				horast = input("\nHow many hours did you work?: ")
 				if horast <=40:
 					sueldo = tarifa*horast
-					print "La tarifa por ", horast, " horas trabajas es de $", sueldo, " dlls"
+					print "Your hours are: ", horast, " Your payment is: $", sueldo, " Dlls"
 				elif horast>40:
 					sueldo=tarifa*horast
 					hextras = horast - 40
 					gextra = hextras * incremento
 					salario = sueldo + gextra
-					print"El salario de la semana por trabajar ", hextras, " horas extras es de $ ", salario, " dlls"
+					print"Your week hours are:  ", hextras, " including extra hours $ ", salario, " Dlls"
 				else:
 					salario = 0
 			else:
-				print 'Contraseña incorrecta'
+				print 'Wrong password.'
 
 				##Usuario 2
 
 		elif nombre == 'Antonio':
-			passwd = raw_input('\nIngrese contraseña: ')
+			passwd = raw_input('\nEnter password: ')
 			if passwd == '1':
-				print 'Bienvenido a la sesión'
-				horast = input("\nIngrese las horas trabajadas: ")
+				print 'Welcome back...',nombre
+				horast = input("\nHow many hours did you work?: ")
 				if horast <=40:
 					sueldo = tarifa*horast
-					print "La tarifa por ", horast, " horas trabajas es de $", sueldo, " dlls"
+					print "Your hours are: ", horast, " Your payment is: $", sueldo, " Dlls"
 				elif horast>40:
 					sueldo=tarifa*horast
 					hextras = horast - 40
 					gextra = hextras * incremento
 					salario = sueldo + gextra
-					print"El salario de la semana por trabajar ", hextras, " horas extras es de $ ", salario, " dlls"
+					print"Your week hours are:  ", hextras, " including extra hours $ ", salario, " Dlls"
 				else:
 					salario = 0
 			else:
-				print 'Contraseña incorrecta'
+				print 'Wrong password'
 
 				##Usuario 3
 
 		elif nombre == 'Jose':
-			passwd = raw_input('\nIngrese contraseña: ')
+			passwd = raw_input('\nEnter password: ')
 			if passwd == '1':
-				print 'Bienvenido a la sesión'
-				horast = input("\nIngrese las horas trabajadas: ")
+				print 'Welcome back...',nombre
+				horast = input("\nHow many hours did you work?: ")
 				if horast <=40:
 					sueldo = tarifa*horast
-					print "La tarifa por ", horast, " horas trabajas es de $", sueldo, " dlls"
+					print "Your hours are: ", horast, " Your payment is: $", sueldo, " Dlls"
 				elif horast>40:
 					sueldo=tarifa*horast
 					hextras = horast - 40
 					gextra = hextras * incremento
 					salario = sueldo + gextra
-					print"El salario de la semana por trabajar ", hextras, " horas extras es de $ ", salario, " dlls"
+					print"Your week hours are:  ", hextras, " including extra hours $ ", salario, " Dlls"
 				else:
 					salario = 0
 			else:
-				print 'Contraseña incorrecta'
+				print 'Wrong password'
 
 				##Usuario 4
 
 		elif nombre == 'David':
-			passwd = raw_input('\nIngrese contraseña: ')
+			passwd = raw_input('\nEnter password: ')
 			if passwd == '1':
-				print 'Bienvenido a la sesión'
-				horast = input("\nIngrese las horas trabajadas: ")
+				print 'Welcome back...',nombre
+				horast = input("\nHow many hours did you work?: ")
 				if horast <=40:
 					sueldo = tarifa*horast
-					print "La tarifa por ", horast, " horas trabajas es de $", sueldo, " dlls"
+					print "Your hours are: ", horast, " Your payment is: $", sueldo, " Dlls"
 				elif horast>40:
 					sueldo=tarifa*horast
 					hextras = horast - 40
 					gextra = hextras * incremento
 					salario = sueldo + gextra
-					print"El salario de la semana por trabajar ", hextras, " horas extras es de $ ", salario, " dlls"
+					print"Your week hours are:  ", hextras, " including extra hours $ ", salario, " Dlls"
 				else:
 					salario = 0
 			else:
@@ -99,31 +99,31 @@ def  validacion(nombre):
 				##Usuario 5
 
 		elif nombre == 'Emilio':
-			passwd = raw_input('\nIngrese contraseña: ')
+			passwd = raw_input('\nEnter password: ')
 			if passwd == '1':
 				print 'Bienvenido a la sesión'
-				horast = input("\nIngrese las horas trabajadas: ")
+				horast = input("\nHow many hours did you work?: ")
 				if horast <=40:
 					sueldo = tarifa*horast
-					print "La tarifa por ", horast, " horas trabajas es de $", sueldo, " dlls"
+					print "Your hours are: ", horast, " Your payment is: $", sueldo, " Dlls"
 				elif horast>40:
 					sueldo=tarifa*horast
 					hextras = horast - 40
 					gextra = hextras * incremento
 					salario = sueldo + gextra
-					print"El salario de la semana por trabajar ", hextras, " horas extras es de $ ", salario, " dlls"
+					print"Your week hours are:  ", hextras, " including extra hours $ ", salario, " Dlls"
 				else:
 					salario = 0
 			else:
 
 				##Si no pone nada en contrasena o no es valida
 
-				print 'Contraseña incorrecta'
+				print 'Wrong password'
 	else:
 
 				##Si no pone usuario o es invalido.
 
-		print "\nNombre de usuario incorrecto"
+		print "\nWrong username"
 
 validacion(nombre)
 
