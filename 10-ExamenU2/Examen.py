@@ -7,21 +7,26 @@ tarifa =30
 incremento = tarifa*1.0
 
 ##Validamos nuestro nombre.
-nombre = raw_input('Enter username: ')
+print ("          +----------------------+")
+print ("          |                      |")
+nombre = raw_input('           Enter username: ')
+
+
 ##Nuestra funcion para hacer los calculos.
 def  validacion(nombre):
-
+	print ("          |                      |")
+	print ("          +----------------------+")
 			##Usuario 1
 
 	if (nombre == "Marco" or nombre == "Antonio" or nombre == "Jose" or nombre == "David" or nombre == "Emilio"):
 		if nombre == 'Marco':
 			passwd = raw_input('\nEnter password: ')
 			if passwd == '1':
-				print 'Welcome back...',nombre
+				print ('Welcome back...',nombre)
 				horast = input("\nHow many hours did you work?: ")
 				if horast <=40:
 					sueldo = tarifa*horast
-					print "Your hours are: ", horast, " Your payment is: $", sueldo, " Dlls"
+					print ("Your hours are: ", horast, " Your payment is: $", sueldo, " Dlls")
 				elif horast>40:
 					sueldo=tarifa*horast
 					hextras = horast - 40
