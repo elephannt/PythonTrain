@@ -1,9 +1,16 @@
 #!/usr/local/bin/python
 # -*- coding: utf-8 -*-
 
-list1, list2 = ["Verde","Rojo","Morado","Azul","Negro","Blanco","Rosa","Anaranjado"], ["Plateado","Guinda","Dorado","Menta","Gris","Lila","Amarillo","Crema"]
+##Diferentes
+
+##list1, list2 = ["Verde","Rojo","Morado","Azul","Negro","Blanco","Rosa","Anaranjado"], ["Plateado","Guinda","Dorado","Menta","Gris","Lila","Amarillo","Crema"]
+
+##Iguales
+
+list1, list2 = ["Verde","Rojo","Morado","Azul","Negro","Blanco","Rosa","Anaranjado"], ["Verde","Rojo","Morado","Azul","Negro","Blanco","Rosa","Anaranjado"]
 #Imprime el resultado de la comparación de ambas listas
-print list1 == list2
+
+print ("\nEl resultado: ", list1 == list2)
 
 #Imprime los elementos de la lista 1
 print "\nElementos de la lista 1:"
