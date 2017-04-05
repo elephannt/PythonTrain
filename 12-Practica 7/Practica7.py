@@ -64,81 +64,89 @@ B = 340
 C = 390
 total = 0
 menu = '1'
+print ("\n")
+print ("     +--------------------------+")
+print("     |    Inicio del programa   |")
+print ("     +--------------------------+")
 
-print("\nInicio del programa")
-print ("\nQue comida desea el dia de hoy?")
-print ("\nComida 1 = 270 , Comida 2 = 340 , Comida 3 = 390\n")
+print ("     +----------------------------------------------------+")
+print ("     |  Que comida desea el dia de hoy?                   |")
+print ("     |  Comida 1 = 270 , Comida 2 = 340 , Comida 3 = 390  |")
+print ("     +----------------------------------------------------+")
 
-comida = raw_input()
+
+comida = raw_input("     | Eliga la comida por favor >> ")
 
 if comida == '1':
 
-    cantidad = int(raw_input("Solo aceptamos monedas de 10$ , 50$ y 100$, por favor ingrese la cantidad de: 270\n"))
+    cantidad = int(raw_input("     | Solo aceptamos monedas de 10$ , 50$ y 100$, por favor ingrese la cantidad de: 270 >>"))
     if cantidad == 10 or cantidad == 50 or cantidad == 100:
         while cantidad <= A:
-                print("Ingrese dinero, por favor, lleva la cantidad de: ",cantidad)
-                dinero = int(raw_input())
+               # print "     | Ingrese dinero, por favor, lleva la cantidad de: %s" %cantidad
+                dinero = int(raw_input("     | Ingrese dinero, por favor, lleva la cantidad de >>"))
+                print "     | La cantidad va en: ", cantidad
                 if dinero == 10 or dinero == 50 or dinero == 100:
                     cantidad = cantidad + int(dinero)
                 else:
-                    print("Cantidad incorrecta: ",dinero)
+                    print "     | Cantidad incorrecta: ",dinero
                     break
 
         if cantidad > A:
-                print ("Por favor espere, calculando...")
+                print "     | Por favor espere, calculando..."
                 time.sleep(3) #Es posible cambiar el numero
                 evento.set()
-                print ("Intente de nuevo, se le regresa: ", cantidad)
+                print "     | Intente de nuevo, se le regresa: ", cantidad
 
 
     else:
-        print ("Cantidad incorrecta: ", cantidad)
+        print "Cantidad incorrecta: ", cantidad
 
 elif comida == '2':
 
-    cantidad = int(raw_input("Solo aceptamos monedas de 10$ , 50$ y 100$, por favor ingrese la cantidad de: 340\n"))
+    cantidad = int(raw_input("     | Solo aceptamos monedas de 10$ , 50$ y 100$, por favor ingrese la cantidad de: 340 >>"))
     if cantidad == 10 or cantidad == 50 or cantidad == 100:
         while cantidad <= B:
-            print("Ingrese dinero, por favor, lleva la cantidad de: ", cantidad)
-            dinero = int(raw_input())
+            dinero = int(raw_input("     | Ingrese dinero, por favor, lleva la cantidad de >>"))
+            print "     | La cantidad va en: ", cantidad
             if dinero == 10 or dinero == 50 or dinero == 100:
                 cantidad = cantidad + int(dinero)
             else:
-                print("Cantidad incorrecta: ", dinero)
+                print"     | Cantidad incorrecta: ", dinero
                 break
         if cantidad > B:
-            print ("Por favor espere, calculando...")
+            print "     | Por favor espere, calculando..."
             time.sleep(3)  # Es posible cambiar el numero
             evento.set()
-            print ("Intente de nuevo, se le regresa: ", cantidad)
+            print "     | Intente de nuevo, se le regresa: ", cantidad
 
     else:
-        print ("Cantidad incorrecta: ", cantidad)
+        print "     | Cantidad incorrecta: ", cantidad
 
 elif comida == '3':
 
-    cantidad = int(raw_input("Solo aceptamos monedas de 10$ , 50$ y 100$, por favor ingrese la cantidad de: 390\n"))
+    cantidad = int(raw_input("      | Solo aceptamos monedas de 10$ , 50$ y 100$, por favor ingrese la cantidad de: 390 >>"))
     if cantidad == 10 or cantidad == 50 or cantidad == 100:
         while cantidad <= C:
-            print("Ingrese dinero, por favor, lleva la cantidad de: ", cantidad)
-            dinero = int(raw_input())
+            dinero = int(raw_input("     | Ingrese dinero, por favor, lleva la cantidad de >>"))
+            print "     | La cantidad va en: ", cantidad
             if dinero == 10 or dinero == 50 or dinero == 100:
                 cantidad = cantidad + int(dinero)
             else:
-                print("Cantidad incorrecta: ", dinero)
+                print "     | Cantidad incorrecta: ", dinero
                 break
         if cantidad > C:
-            print ("Por favor espere, calculando...")
+            print "     | Por favor espere, calculando..."
             time.sleep(3)  # Es posible cambiar el numero
             evento.set()
-            print ("Intente de nuevo, se le regresa: ", cantidad)
+            print "     | Intente de nuevo, se le regresa: ", cantidad
 
     else:
-        print ("Cantidad incorrecta: ", cantidad)
+        print ("     | Cantidad incorrecta: ", cantidad)
 
 else:
 
-    print ("Esa comida no existe: ", comida)
+    print "     | Esa comida no existe: ", comida
+    print ("     +--------------------------+")
 
 
 
