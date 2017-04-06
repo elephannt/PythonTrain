@@ -82,6 +82,7 @@ if comida == '1':
     cantidad = int(raw_input("     | Solo aceptamos monedas de 10$ , 50$ y 100$, por favor ingrese la cantidad de: 270 >>"))
     if cantidad == 10 or cantidad == 50 or cantidad == 100:
         cant = cantidad
+        print "     | La cantidad va en: ", cant
         while cant <= A:
                 dinero = int(raw_input("     | Ingrese dinero, por favor, lleva la cantidad de >>"))
                 if dinero == 10 or dinero == 50 or dinero == 100:
@@ -99,13 +100,14 @@ if comida == '1':
                 evento.set()
                 print "     | Intente de nuevo, se le regresa: ", cant
     else:
-        print "Cantidad incorrecta: ", cantidad
+        print "     | Cantidad incorrecta: ", cantidad
 
 elif comida == '2':
     cantidad = int(
         raw_input("     | Solo aceptamos monedas de 10$ , 50$ y 100$, por favor ingrese la cantidad de: 340 >>"))
     if cantidad == 10 or cantidad == 50 or cantidad == 100:
         cant = cantidad
+        print "     | La cantidad va en: ", cant
         while cant <= B:
             dinero = int(raw_input("     | Ingrese dinero, por favor, lleva la cantidad de >>"))
             if dinero == 10 or dinero == 50 or dinero == 100:
@@ -123,12 +125,13 @@ elif comida == '2':
             evento.set()
             print "     | Intente de nuevo, se le regresa: ", cant
     else:
-        print "Cantidad incorrecta: ", cantidad
+        print "     | Cantidad incorrecta: ", cantidad
 elif comida == '3':
     cantidad = int(
         raw_input("     | Solo aceptamos monedas de 10$ , 50$ y 100$, por favor ingrese la cantidad de: 390 >>"))
     if cantidad == 10 or cantidad == 50 or cantidad == 100:
         cant = cantidad
+        print "     | La cantidad va en: ", cant
         while cant <= C:
             dinero = int(raw_input("     | Ingrese dinero, por favor, lleva la cantidad de >>"))
             if dinero == 10 or dinero == 50 or dinero == 100:
