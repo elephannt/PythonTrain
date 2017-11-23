@@ -14,6 +14,8 @@ s.connect(("8.8.8.8", 80))
 ##El patrón Abstract Factory nos permite crear, mediante una interfaz, conjuntos o familias de objetos
 ##(denominados productos) que dependen mutuamuente y todo esto sin especificar cual es el objeto concreto.
 
+#Patron singleton
+
 class MiThread(threading.Thread):
     def __init__(self,evento):
         threading.Thread.__init__(self)
