@@ -37,7 +37,7 @@ random_response = random.choice(responses)
 
 ## Singleton
 ##Es un patrón de diseño diseñado para restringir
-## la creación de objetos pertenecientes a una clase o el valor de un tipo a un único objeto.
+## la creación de objetos pertenecientes a una clase o el valor de un tipo a un5 único objeto.
 os.system('clear')
 print ("\n     +-------------------------------------------------------------------------------------------------+")
 print ("     |					         LOGIN SCREEN					       |")
