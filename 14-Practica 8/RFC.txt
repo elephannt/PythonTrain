@@ -1,0 +1,5 @@
+       | Nombre: MARCO
+       | Apellido paterno: LOPEZ
+       | Apellido materno: VALENZUELA
+       | Fecha de nacimiento: 1994/07/03 
+       | Tu RFC es: LOVM19940703YL1
