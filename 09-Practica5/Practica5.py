@@ -40,7 +40,7 @@ class instrumento:
     def __init__ (self,instrumento):
         self.instrumento = instrumento
 
-    def tocar (selfs):
+    def tocar (self):
         print ("Estoy feliz tocando un instrumento")
 
     def envivo (self):

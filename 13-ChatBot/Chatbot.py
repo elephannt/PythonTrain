@@ -1,5 +1,7 @@
 import random, threading, time
 
+#Patron singleton
+
 class MiThread(threading.Thread):
     def __init__(self,evento):
         threading.Thread.__init__(self)

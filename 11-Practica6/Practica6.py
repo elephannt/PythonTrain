@@ -59,7 +59,19 @@
 
 ##Implementacion de la practica en el examen.
 
-import time
+import time, threading
+
+
+class MiThread(threading.Thread):
+    def __init__(self,evento):
+        threading.Thread.__init__(self)
+        self.evento=evento
+    def run(self):
+        print (self.getName(),"En espera del evento")
+        self.evento.wait()
+        print (self.getName(),"Fin del evento")
+
+evento = threading.Event()
 
 t0 = time.time()
 
@@ -95,6 +107,8 @@ def  validacion(nombre):
 					gextra = hextras * incremento
 					salario = sueldo + gextra
 					print"Your week hours are:  ", hextras, " including extra hours $ ", salario, " Dlls"
+					evento.set()
+
 				else:
 					salario = 0
 			else:
