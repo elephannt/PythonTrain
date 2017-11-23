@@ -47,16 +47,18 @@ print ("\n     +----------------------------------------------------------------
 s.close()
 user = raw_input("     | Please enter your username: ")
 password = raw_input("     | Please enter your password: ")
+acct = raw_input("     | Please enter your account number: ")
+
 print ("     | Going to verify information, please wait...")
 print("\n")
 for i in range(21):
     						sys.stdout.write('\r')
     						sys.stdout.write("					[%-20s] %d%%" % ('='*i, 5*i))
     						sys.stdout.flush()
-    						sleep(0.25)
+    						sleep(0.25) ##0.25
 time.sleep(3)  # Es posible cambiar el numero
 evento.set()
-if user == "m" and password == "m":
+if user == "m" and password == "m" and acct == "123":
 	os.system('clear')
 	s = """
                       _-.                     .-_
@@ -86,10 +88,10 @@ if user == "m" and password == "m":
 		print ("\n     +-------------------------------------------------------------------------------------------------+")
 		print ("     |					         WELCOME BACK					       |")
 		print ("     +-------------------------------------------------------------------------------------------------+")
-		print ("     | CCON: Cannot connect on network						                       |")
-		print ("     | ASO: All services out								 	       |")
-		print ("     | ACO: All channels out								  	       |")
-		print ("     | PHYS: Physical condition						 			       |")
+		print ("     | CCON: Cannot connect on network.						                       |")
+		print ("     | ASO: All services out.								 	       |")
+		print ("     | ACO: All channels out.								  	       |")
+		print ("     | Billing: Billing question.						 		       |")
 		print ("     +-------------------------------------------------------------------------------------------------+")
 
 		userInput = raw_input("     | Username >>> ")
@@ -153,6 +155,79 @@ if user == "m" and password == "m":
 				print ("     | Please check your internet connection...							       |")
 				print ("     +-------------------------------------------------------------------------------------------------+")
 				break
+		elif userInput == "ASO":
+			print ("     +-------------------------------------------------------------------------------------------------+")
+			print ("     | BestChatBOT: Do you have a poweroutage?					               	       |")
+			print ("     +-------------------------------------------------------------------------------------------------+")
+			userInput5 = raw_input("     | Username >>> ")
+			if userInput5 == "No" or userInput5 == "no":
+				print ("     +-------------------------------------------------------------------------------------------------+")
+				print ("     | BestChatBOT:Make sure the ONT its connected to the poweroutlet, do you have services now?       |")
+				print ("     +-------------------------------------------------------------------------------------------------+")
+				userInput6 = raw_input("     | Username >>> ")
+				if userInput6 == "No" or userInput6=="no":
+					print ("     +-------------------------------------------------------------------------------------------------+")
+					print ("     | BestChatBot: We will need a tech to check the connection, check for available techs, pls wait...|")
+					print ("     +-------------------------------------------------------------------------------------------------+")
+					time.sleep(3)  # Es posible cambiar el numero
+					evento.set()
+					print ("     +-------------------------------------------------------------------------------------------------+")
+					print ("     | Somebody will be showing today...have a good day.		        		       |")
+					print ("     +-------------------------------------------------------------------------------------------------+")
+					break
+				elif userInput6 == "Yes" or userInput6 == "yes":
+					print ("     +-------------------------------------------------------------------------------------------------+")
+					print ("     | BestChatBot: Its great to hear that we got your services back, have a good day!")
+					print ("     +-------------------------------------------------------------------------------------------------+")
+					break
+		elif userInput == "ACO":
+			print ("     +-------------------------------------------------------------------------------------------------+")
+			print ("     | BestChatBot: What do you see on the T.V., nosignal or a blackscreen?")
+			print ("     +-------------------------------------------------------------------------------------------------+")
+			userInput7 = raw_input("     | Username >>> ")
+
+			if userInput7 == "nosignal":
+				print ("     +-------------------------------------------------------------------------------------------------+")
+				print ("     | BestChatBOT: Press the input button on the T.V. and change it to the proper one, is it working? |")
+				print ("     +-------------------------------------------------------------------------------------------------+")
+				userInput8 = raw_input("     | Username >>> ")
+				if userInput8 == "Yes" or userInput8 == "yes":
+					print ("     +-------------------------------------------------------------------------------------------------+")
+					print ("     | BestChatBot: Its great to hear that we got your services back, have a good day!")
+					print ("     +-------------------------------------------------------------------------------------------------+")
+					break
+				elif userInput8 == "No" or userInput8 == "no":
+					print ("     +-------------------------------------------------------------------------------------------------+")
+					print ("     | BestChatBot: Please call the manufacter of your Television, if it doesnt work call us back.")
+					print ("     +-------------------------------------------------------------------------------------------------+")
+					break
+			elif userInput7 == "blackscreen":
+				print ("     +-------------------------------------------------------------------------------------------------+")
+				print ("     | BestChatBOT: Please make sure that the Television its connected to the poweroutlet,does it work?|")
+				print ("     +-------------------------------------------------------------------------------------------------+")
+				userInput9 = raw_input("     | Username >>> ")
+				if userInput9 == "Yes" or userInput9=="yes":
+					print ("     +-------------------------------------------------------------------------------------------------+")
+					print ("     | BestChatBot: Its great to hear that we got your services back, have a good day!")
+					print ("     +-------------------------------------------------------------------------------------------------+")
+					break
+				elif userInput9 == "No" or userInput9=="no":
+					print ("     +-------------------------------------------------------------------------------------------------+")
+					print ("     | BestChatBot: Please call the manufacter of your Television, if it doesnt work call us back.")
+					print ("     +-------------------------------------------------------------------------------------------------+")
+					break
+		elif userInput == "Billing":
+			print ("     +-------------------------------------------------------------------------------------------------+")
+			print ("     | BestChatBOT: We will need to transfer you to billing, please call them at 1-800-Billing         |")
+			print ("     +-------------------------------------------------------------------------------------------------+")
+			print ("     			Loading program, please wait...\n")
+			print("")
+			for i in range(21):
+    						sys.stdout.write('\r')
+    						sys.stdout.write("     			[%-20s] %d%%" % ('='*i, 5*i))
+    						sys.stdout.flush()
+    						sleep(0.25)
+			break
 		elif userInput == "exit":
 			os.system('clear')
 			break
